@@ -1,4 +1,4 @@
-﻿// Scroll-reveal for sections (progressive enhancement)
+// Scroll-reveal for sections (progressive enhancement)
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealEls = document.querySelectorAll('.reveal');
   if (!prefersReduced && 'IntersectionObserver' in window) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const float minorLineFrequency = 1.0;
     const vec4 gridColor = vec4(0.5);
     const float scale = 5.0;
-    const vec4 lineColor = vec4(0.2, 0.8, 0.3, 1.0);
+    const vec4 lineColor = vec4(0.4, 0.7, 0.5, 1.0); // Soft pastel green
     const float minLineWidth = 0.01;
     const float maxLineWidth = 0.2;
     const float lineSpeed = 1.0 * overallSpeed;
@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
       space.x += random(space.y * warpFrequency + iTime * warpSpeed + 2.0) * warpAmplitude * horizontalFade;
 
       vec4 lines = vec4(0.0);
-      vec4 bgColor1 = vec4(0.02, 0.15, 0.05, 1.0);
-      vec4 bgColor2 = vec4(0.05, 0.25, 0.1, 1.0);
+      vec4 bgColor1 = vec4(0.02, 0.06, 0.03, 1.0); // Very dark subtle green
+      vec4 bgColor2 = vec4(0.04, 0.1, 0.06, 1.0);  // Dark subtle green
 
       for(int l = 0; l < linesPerGroup; l++) {
         float normalizedLineIndex = float(l) / float(linesPerGroup);
