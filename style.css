@@ -792,3 +792,12 @@
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
 }
+
+/* Pixel Cursor Trail */
+.pixel-trail-pixel {
+  position: fixed;
+  pointer-events: none;
+  background-color: var(--green);
+  z-index: 9999;
+  transition: width 0.1s ease-out, height 0.1s ease-out, opacity 0.1s linear;
+}

@@ -248,3 +248,89 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Pixel Cursor Trail Logic
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.matchMedia("(pointer: coarse)").matches) return; // Skip on touch devices
+
+  const PIXEL_SIZE = 12;
+  const TRAIL_LENGTH = 40;
+  const FADE_SPEED = 0.04;
+  
+  let pixels = [];
+  let pixelId = 0;
+  let lastPosition = { x: 0, y: 0 };
+  let animationFrameId;
+
+  const container = document.createElement('div');
+  container.style.position = 'fixed';
+  container.style.inset = '0';
+  container.style.pointerEvents = 'none';
+  container.style.zIndex = '9998';
+  container.style.overflow = 'hidden';
+  document.body.appendChild(container);
+
+  const createPixel = (x, y) => {
+    const el = document.createElement('div');
+    el.className = 'pixel-trail-pixel';
+    container.appendChild(el);
+    return {
+      id: pixelId++,
+      x,
+      y,
+      opacity: 1,
+      age: 0,
+      element: el
+    };
+  };
+
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    const dx = x - lastPosition.x;
+    const dy = y - lastPosition.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance > PIXEL_SIZE) {
+      const newPixel = createPixel(x, y);
+      pixels.push(newPixel);
+
+      if (pixels.length > TRAIL_LENGTH) {
+        const oldest = pixels.shift();
+        if (oldest.element && oldest.element.parentNode) {
+          oldest.element.parentNode.removeChild(oldest.element);
+        }
+      }
+
+      lastPosition = { x, y };
+    }
+  });
+
+  const animate = () => {
+    for (let i = pixels.length - 1; i >= 0; i--) {
+      const p = pixels[i];
+      p.opacity -= FADE_SPEED;
+      p.age += 1;
+
+      if (p.opacity <= 0) {
+        if (p.element && p.element.parentNode) {
+          p.element.parentNode.removeChild(p.element);
+        }
+        pixels.splice(i, 1);
+      } else {
+        const sizeMultiplier = Math.max(0.3, 1 - p.age / 100);
+        const currentSize = PIXEL_SIZE * sizeMultiplier;
+
+        p.element.style.left = `${p.x - currentSize / 2}px`;
+        p.element.style.top = `${p.y - currentSize / 2}px`;
+        p.element.style.width = `${currentSize}px`;
+        p.element.style.height = `${currentSize}px`;
+        p.element.style.opacity = p.opacity;
+      }
+    }
+    animationFrameId = requestAnimationFrame(animate);
+  };
+
+  animationFrameId = requestAnimationFrame(animate);
+});
