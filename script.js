@@ -223,3 +223,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   requestAnimationFrame(render);
 });
+
+// NavHeader Animation Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('.animated-nav');
+  const cursor = document.querySelector('.nav-cursor');
+  const tabs = document.querySelectorAll('.nav-tab');
+
+  if (nav && cursor && tabs.length > 0) {
+    tabs.forEach(tab => {
+      tab.addEventListener('mouseenter', () => {
+        const rect = tab.getBoundingClientRect();
+        const navRect = nav.getBoundingClientRect();
+        
+        cursor.style.width = `${rect.width}px`;
+        // We use offsetLeft for position relative to the ul
+        cursor.style.transform = `translateX(${tab.offsetLeft}px)`;
+        cursor.style.opacity = '1';
+      });
+    });
+
+    nav.addEventListener('mouseleave', () => {
+      cursor.style.opacity = '0';
+    });
+  }
+});
