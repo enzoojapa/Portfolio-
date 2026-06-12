@@ -317,8 +317,10 @@
   }
 
   @media (max-width: 860px){
-    .hero{ grid-template-columns: 1fr; padding-top: 56px; text-align:left; }
-    .hero-photo-wrap{ order:-1; width: min(100%, 240px); margin-bottom: 8px; }
+    .hero{ grid-template-columns: 1fr; padding-top: 56px; text-align:center; }
+    .hero-photo-wrap{ order:-1; width: min(100%, 240px); margin: 0 auto 24px; }
+    .hero .lede{ margin-left: auto; margin-right: auto; }
+    .btn-row{ justify-content: center; }
   }
 
   /* ============ TICKER (signature) ============ */
