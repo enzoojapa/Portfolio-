@@ -1,8 +1,14 @@
 // Scroll-reveal for sections (progressive enhancement)
+(() => {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealEls = document.querySelectorAll('.reveal');
   if (!prefersReduced && 'IntersectionObserver' in window) {
+    // Aplicar efeito de reveal dinamicamente em todos os textos e cards
+    const autoRevealEls = document.querySelectorAll('p, h1, h2, h3, li, .eyebrow, .stat-row, .exp-card, .project-card, .edu-card');
+    autoRevealEls.forEach(el => el.classList.add('reveal'));
+
+    const revealEls = document.querySelectorAll('.reveal');
     revealEls.forEach(el => el.classList.add('pre-reveal'));
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -11,9 +17,11 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.1 });
+
     revealEls.forEach(el => observer.observe(el));
   }
+})();
 // Shader Background Implementation
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('shader-canvas');
