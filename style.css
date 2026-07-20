@@ -806,25 +806,4 @@
 
 
 
-/* Grid Background */
-.grid-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at center, #052e16, #000000);
-  z-index: -2;
-}
-.grid-lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
+
