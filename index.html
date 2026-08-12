@@ -1,385 +1,274 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enzo Watanabe de Lima - Portfólio</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-<link rel="apple-touch-icon" href="favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Enzo Watanabe de Lima - Engenharia de Software & Dados</title>
+  <meta name="description" content="Estudante de Engenharia de Software na PUCPR e estagiário na SESA-PR, focado em levantamento de requisitos, automação de dados e processos.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Enzo Watanabe de Lima - Portfólio">
+  <meta property="og:description" content="Estudante de Engenharia de Software na PUCPR e estagiário na SESA-PR, focado em requisitos e processos.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Enzo+Watanabe+de+Lima">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Canvas for Shader Background -->
-  <canvas id="shader-canvas"></canvas>
-
-<header>
-  <nav>
-    <div class="logo"><span class="dot"></span> Enzo Watanabe de Lima</div>
-    <ul class="nav-links animated-nav">
-      <li class="nav-tab"><a href="#sobre">Sobre</a></li>
-      <li class="nav-tab"><a href="#experiencia">Experiência</a></li>
-      <li class="nav-tab"><a href="#projetos">Projetos</a></li>
-      <li class="nav-tab"><a href="#formacao">Formação</a></li>
-      <li class="nav-tab"><a href="#fora-de-campo">Fora de Campo</a></li>
-      <li class="nav-tab"><a href="#contato">Contato</a></li>
-      <li class="nav-cursor"></li>
-    </ul>
-    <div class="nav-cta">
-      <a class="icon-btn" href="https://github.com/enzoojapa" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.2 0 .31.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-      </a>
-      <a class="icon-btn" href="https://www.linkedin.com/in/enzo-watanabe-de-lima/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
-      </a>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <!-- ============ HERO ============ -->
-  <section class="hero wrap" id="topo" style="border-bottom:none;">
-    <div>
-      <div class="eyebrow">PUCPR Engenharia de Software 6º período</div>
-      <h1>Enzo Watanabe <span>de Lima</span></h1>
-      <p class="lede">
-        Tenho 20 anos, sou um Desenvolvedor em formação, movido por desafios e focado em resultados práticos. Sou <strong>proativo, focado em resultados e priorizo o trabalho em equipe em todos os meus projetos</strong>. Atualmente sou estagiário na <strong>Secretaria da Saúde do Paraná (SESA-PR)</strong>,
-        aplicando código, dados e modelagem de processos em projetos reais de tecnologia.
-      </p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="#projetos">
-          Ver projetos
-          <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-        </a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/enzo-watanabe-de-lima/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
-          LinkedIn
-        </a>
-        <a class="btn btn-ghost" href="mailto:enzowatanabedelima@gmail.com">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          E-mail
-        </a>
+  <header>
+    <div class="container header-content">
+      <a href="#" class="logo">EW <span>Enzo Watanabe</span></a>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+      </nav>
+      <div class="social-links">
+        <a href="https://github.com/enzoojapa" target="_blank"><i class='bx bxl-github bx-sm'></i></a>
+        <a href="https://linkedin.com/in/enzo-watanabe-de-lima" target="_blank"><i class='bx bxl-linkedin-square bx-sm'></i></a>
+        <a href="mailto:enzowatanabedelima@gmail.com"><i class='bx bx-envelope bx-sm'></i></a>
       </div>
     </div>
+  </header>
 
-    <div class="hero-photo-wrap">
-      <div class="hero-photo-glow"></div>
-      <div class="hero-photo-frame">
-        <img src="profile.jpg" alt="Foto de Enzo Watanabe de Lima">
-        <div class="hero-badge">
-          <span class="pulse"></span>
-          Estagiário — SESA-PR
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge-availability">
+          <span class="dot"></span> DISPONÍVEL PARA OPORTUNIDADES
+        </div>
+        <h1>Estudante de Engenharia de Software focado em <span>requisitos e processos.</span></h1>
+        <p>Trabalho na ponte entre a necessidade de quem usa e a solução que o time constrói. Atualmente estagiário na SESA/PR, atuando com automação de processos, análise de dados e sistemas de saúde pública.</p>
+        
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">Ver projetos <i class='bx bx-right-arrow-alt'></i></a>
+          <a href="Curriculo- Enzo Watanabe de Lima.pdf" download class="btn btn-outline">Baixar CV <i class='bx bx-download'></i></a>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Enzo Watanabe de Lima">
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-icon"><i class='bx bx-code-alt'></i></div>
+        <div class="stat-info">
+          <h4>+8</h4>
+          <p>Projetos concluídos</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class='bx bx-time-five'></i></div>
+        <div class="stat-info">
+          <h4>+500h</h4>
+          <p>De automação e processos</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class='bx bx-table'></i></div>
+        <div class="stat-info">
+          <h4>+15GB</h4>
+          <p>Bases processadas (Big Data)</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class='bx bx-target-lock'></i></div>
+        <div class="stat-info">
+          <h4>Foco</h4>
+          <p>Impacto e resultados reais</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- ============ TICKER ============ -->
-  <div class="ticker-band">
-    <div class="ticker-track">
-      <div class="ticker-item">Engenharia de Software — PUCPR <span class="sep">•</span></div>
-      <div class="ticker-item alt">6º período · previsão 2027 <span class="sep">•</span></div>
-      <div class="ticker-item">Estagiário — SESA-PR <span class="sep">•</span></div>
-      <div class="ticker-item alt">PHP // Python // Java // JavaScript // SQL <span class="sep">•</span></div>
-      <div class="ticker-item">PT-BR fluente · EN B1 · DE A1 <span class="sep">•</span></div>
-      <div class="ticker-item alt">Coxa Branca <span class="sep">•</span></div>
-      <div class="ticker-item">Futebol · FIFA <span class="sep">•</span></div>
-      <div class="ticker-item">Engenharia de Software — PUCPR <span class="sep">•</span></div>
-      <div class="ticker-item alt">6º período · previsão 2027 <span class="sep">•</span></div>
-      <div class="ticker-item">Estagiário — SESA-PR <span class="sep">•</span></div>
-      <div class="ticker-item alt">PHP // Python // Java // JavaScript // SQL <span class="sep">•</span></div>
-      <div class="ticker-item">PT-BR fluente · EN B1 · DE A1 <span class="sep">•</span></div>
-      <div class="ticker-item alt">Coxa Branca <span class="sep">•</span></div>
-      <div class="ticker-item">Futebol · FIFA <span class="sep">•</span></div>
-    </div>
-  </div>
-
-  <!-- ============ SOBRE / SKILLS ============ -->
-  <section id="sobre">
-    <div class="wrap">
-      <div class="about-grid">
-        <div>
-          <div class="eyebrow">// Sobre</div>
-          <h2 style="font-family:var(--font-display); font-size:clamp(1.8rem,4vw,2.6rem); font-weight:700; margin-bottom:18px; letter-spacing:-0.01em;">
-            Perfil
-          </h2>
-          <p>
-            Estou no <strong>6º período de Engenharia de Software na PUCPR</strong>, com
-            previsão de conclusão em dezembro de 2027. Busco oportunidades para aplicar
-            e evoluir habilidades técnicas e interpessoais em projetos reais de tecnologia.
-          </p>
-          <p>
-            No dia a dia, costumo ser a pessoa que organiza o processo: gosto de
-            <strong>modelar fluxos, desenvolver soluções, e realizar a documentação.</strong> Faço questão de que o time
-            chegue junto na entrega, sem perder o senso de prioridade quando o prazo aperta.
-          </p>
-        </div>
-
-        <div class="skill-groups">
-          <div class="skill-card">
-            <h3>Linguagens &amp; Dados</h3>
-            <div class="pill-row">
-              <span class="pill glow">PHP</span>
-              <span class="pill glow">Python</span>
-              <span class="pill glow">Java</span>
-              <span class="pill glow">JavaScript</span>
-              <span class="pill glow">SQL</span>
-              <span class="pill glow">Git</span>
-              <span class="pill glow">Laravel</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3>Modelagem &amp; Design</h3>
-            <div class="pill-row">
-              <span class="pill">Bizagi</span>
-              <span class="pill">Astah</span>
-              <span class="pill">Figma</span>
-              <span class="pill">Miro</span>
-              <span class="pill">BPMN</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3>Ferramentas</h3>
-            <div class="pill-row">
-              <span class="pill">Word Avançado</span>
-              <span class="pill">Excel Avançado</span>
-              <span class="pill">PowerBI Avançado</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3>Idiomas</h3>
-            <div class="pill-row">
-              <span class="pill">Português — Fluente</span>
-              <span class="pill">Inglês — B1 Cambridge</span>
-              <span class="pill">Alemão — A1 Goethe Institut</span>
-            </div>
-          </div>
-          <div class="skill-card" style="grid-column: 1 / -1;">
-            <h3>Perfil de Trabalho</h3>
-            <div class="pill-row">
-              <span class="pill">Trabalho em equipe</span>
-              <span class="pill">Proatividade</span>
-              <span class="pill">Comprometimento</span>
-              <span class="pill">Disciplina</span>
-              <span class="pill">Resolução de problemas</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ EXPERIÃŠNCIA ============ -->
-  <section id="experiencia">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">// Experiência</div>
-        <h2>Onde estou aplicando o que aprendo</h2>
-        <p>Estágio atual e o impacto prático no time.</p>
+    <section id="projetos">
+      <div class="section-header">
+        <h2>Projetos em destaque</h2>
+        <a href="https://github.com/enzoojapa" target="_blank">Ver repositórios <i class='bx bx-right-arrow-alt'></i></a>
       </div>
 
-      <div class="exp-card">
-        <div class="exp-top">
-          <div>
-            <h3>SESA — Secretaria de Estado da Saúde do Paraná</h3>
-            <div class="role">Estagiário</div>
-          </div>
-          <div class="badge-current"><span class="pulse"></span> Atual</div>
-        </div>
-        <p>
-          Atuo na área de <strong>levantamento e processamento de dados</strong>, com foco na
-          <strong>automação de processos do meu setor</strong>. Entre as minhas principais entregas estão a criação de
-          <strong>dashboards analíticos</strong>, um <strong>mapa interativo do Paraná</strong>, e um <strong>extrator automatizado do Diário Oficial</strong>.
-          Além disso, desenvolvi <strong>aplicativos executáveis em Electron</strong> e <strong>scripts em Python</strong> para cruzar bases de dados gigantescas (Ambulatoriais e Hospitalares), otimizando rotinas que antes eram estritamente manuais e demoradas.
-        </p>
-        <div class="pill-row">
-          <span class="pill">Levantamento de dados</span>
-          <span class="pill">Processamento de dados</span>
-          <span class="pill">Automação de processos</span>
-          <span class="pill">Python</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROJETOS ============ -->
-  <section id="projetos">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">// Projetos</div>
-        <h2>Alguns projetos que já concluí</h2>
-        <p>Projetos acadêmicos e aplicados, do hardware ao processo.</p>
-      </div>
-
-      <div class="project-grid">
-
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
         <div class="project-card">
-          <div class="project-tag">Python · Firebird · Dados Massivos</div>
-          <h3>Cruzamento Ambulatorial x Hospitalar</h3>
-          <p>
-            Script em Python que cruza pacientes presentes na base Ambulatorial (DBF de 15GB) e Hospitalar (Firebird 1.5 de 3GB) com o mesmo procedimento e data. O banco antigo exigiu quebra de senha e engenharia reversa para acesso. O projeto possibilitou o bloqueio de AIHs duplicadas, evitando cobranças indevidas ao estado.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">Firebird SQL</span>
-            <span class="pill">Processamento 15GB+</span>
+          <div class="project-image"><i class='bx bxs-data'></i></div>
+          <div class="project-content">
+            <h3>Cruzamento Ambulatorial e Hospitalar</h3>
+            <div class="project-desc">
+              <strong>Problema:</strong> Cobranças indevidas ao estado devido a AIHs duplicadas em bases massivas.<br>
+              <strong>Papel:</strong> Desenvolvedor Solo.<br>
+              <strong>Decisões:</strong> Python (Pandas) para lidar com DBF de 15GB e quebra de senha do legado Firebird 1.5 (3GB).<br>
+              <strong>Resultado:</strong> Bloqueio de milhares de registros, evitando evasão fiscal.<br>
+              <strong>Artefato:</strong> Script confidencial da SESA.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Firebird</span>
+            </div>
+            <div class="project-links">
+              <span>Confidencial SESA</span>
+            </div>
           </div>
-          <div class="project-note">Dados confidenciais SESA — sem repositório público</div>
         </div>
 
+        <!-- Projeto 2 -->
         <div class="project-card">
-          <div class="project-tag">DSR · SAP · Processos</div>
-          <h3>SPRO IT Solutions — Automação SAP</h3>
-          <p>
-            Projeto de Design Science Research em parceria com a SPRO IT Solutions,
-            propondo a automação do fluxo de aprovação de horas adicionais em SAP de
-            uma empresa parceira. Envolveu modelagem de processos AS-IS / TO-BE
-            seguindo o <strong>MR-MPS-SW</strong> e diagramação em BPMN.
-          </p>
-          <div class="pill-row">
-            <span class="pill">SAP / ABAP</span>
-            <span class="pill">BPMN</span>
-            <span class="pill">Bizagi</span>
-            <span class="pill">Qualidade de Software</span>
+          <div class="project-image"><i class='bx bx-map-alt'></i></div>
+          <div class="project-content">
+            <h3>Dashboard de Incentivos Hospitalares</h3>
+            <div class="project-desc">
+              <strong>Problema:</strong> Gestores precisavam de uma visão clara dos repasses financeiros a nível municipal e regional.<br>
+              <strong>Papel:</strong> Analista de Dados & BI.<br>
+              <strong>Decisões:</strong> Uso de painéis interativos com mapa do Paraná e drill-down em 4 níveis hierárquicos.<br>
+              <strong>Resultado:</strong> Rapidez na tomada de decisão gerencial.<br>
+              <strong>Artefato:</strong> Dashboard em produção.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">DAX</span>
+              <span class="tech-tag">Dashboards</span>
+            </div>
+            <div class="project-links">
+              <span>Confidencial SESA</span>
+            </div>
           </div>
-          <div class="project-note">Foco: melhoria de processos da empresa parceira</div>
         </div>
 
+        <!-- Projeto 3 -->
         <div class="project-card">
-          <div class="project-tag">IoT · Redes · Servidor</div>
-          <h3>Tijucas — NAS Residencial</h3>
-          <p>
-            Projeto de um servidor NAS doméstico rodando <strong>CasaOS</strong>,
-            com monitoramento ambiental via <strong>ESP32 + sensor DHT-22</strong>
-            para leitura de temperatura e umidade em tempo real. Desenvolvido para a
-            disciplina de Clínica de TIC e concluído neste período.
-          </p>
-          <div class="pill-row">
-            <span class="pill">CasaOS</span>
-            <span class="pill">ESP32</span>
-            <span class="pill">DHT-22</span>
-            <span class="pill">Redes</span>
+          <div class="project-image"><i class='bx bx-cog'></i></div>
+          <div class="project-content">
+            <h3>Automação SAP - SPRO IT Solutions</h3>
+            <div class="project-desc">
+              <strong>Problema:</strong> Fluxo manual e lento de aprovação de horas adicionais (DSR).<br>
+              <strong>Papel:</strong> Modelador de Processos.<br>
+              <strong>Decisões:</strong> Mapeamento AS-IS/TO-BE seguindo o MR-MPS-SW e diagramação estrita em BPMN.<br>
+              <strong>Resultado:</strong> Desenho de solução otimizada entregue à empresa.<br>
+              <strong>Artefato:</strong> <a href="#" style="text-decoration:underline;">Ver diagrama BPMN (Em breve)</a>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">BPMN</span>
+              <span class="tech-tag">Bizagi</span>
+              <span class="tech-tag">SAP ABAP</span>
+            </div>
+            <div class="project-links">
+              <a href="#"><i class='bx bxl-github'></i> Repositório</a>
+            </div>
           </div>
-          <div class="project-note">Status: concluído neste período</div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ FORMAÇÃO ============ -->
-  <section id="formacao">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">// Formação</div>
-        <h2>Trajetória acadêmica</h2>
-        <p>Da escola até o bacharelado, mais as certificações ao longo do caminho.</p>
-      </div>
-
-      <div class="edu-grid">
+    <section id="experiencia" class="dual-layout">
+      <div>
+        <div class="section-header">
+          <h2>Experiência</h2>
+        </div>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="when">2022</div>
-            <h3>Colégio Martinus</h3>
-            <p>Ensino Médio completo.</p>
+            <div class="timeline-header">
+              <h3>Estagiário de TI — SESA/PR</h3>
+              <span>2024 — Atual</span>
+            </div>
+            <p>Atuo no levantamento, tratamento e automação de dados dos sistemas de informação em saúde do Estado. Substituo rotinas manuais por processos automatizados e transformo dados brutos em painéis de apoio à decisão (Dashboards, scripts Python para bases gigantes, e extração automatizada de Diário Oficial).</p>
           </div>
-          <div class="timeline-item">
-            <div class="when">2024 — 2027 (em andamento · 6º período)</div>
-            <h3>PUCPR — Bacharelado em Engenharia de Software</h3>
-            <p>Pontifícia Universidade Católica do Paraná. Início em março de 2024, com previsão de conclusão em dezembro de 2027.</p>
-          </div>
-        </div>
-
-        <div class="cert-block">
-          <h3>Certificações</h3>
-          <div class="pill-row" style="flex-direction:column; align-items:stretch; gap:10px;">
-            <span class="pill" style="text-align:left;">Cambridge English — B1 Preliminary, University of Cambridge</span>
-            <span class="pill" style="text-align:left;">Goethe-Zertifikat A1: Fit in Deutsch 1 — Goethe-Institut</span>
-            <span class="pill" style="text-align:left;">Introdução à Defesa em Redes — Cisco Networking Academy</span>
-            <span class="pill" style="text-align:left;">Linux Unhatched — Cisco Networking Academy</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FORA DE CAMPO ============ -->
-  <section id="fora-de-campo" class="pitch-section">
-    <div class="wrap">
-      <div class="pitch-grid">
-        <div class="pitch-text">
-          <div class="eyebrow">// Fora de campo</div>
-          <h2 style="font-family:var(--font-display); font-size:clamp(1.8rem,4vw,2.6rem); font-weight:700; margin-bottom:18px; letter-spacing:-0.01em;">
-            Fora do trabalho, o que me move
-          </h2>
-          <div class="crest-note"> Coxa Branca </div>
-          <p>
-            Sou <strong>fanático por futebol</strong> em qualquer formato: jogo bola com
-            os amigos, assisto a praticamente qualquer partida na TV e encaro qualquer
-            desafio numa boa rodada de <strong>FIFA</strong>.
-          </p>
-          <p>
-            E claro, no meio de tudo isso tem meu time de coração: <strong>Coritiba</strong>.
-            Independente da vitória, derrota ou aquele empate amargo, sigo na arquibancada (ou no sofá)
-            torcendo igual.
-          </p>
-          </div>
-
-        <div class="player-card">
-          <div class="player-card-head">
-            <div class="player-rating">99<span>OVR · TORCIDA</span></div>
-            <div class="player-pos">POSIÇÃO<strong>Torcedor / Linha de Frente</strong></div>
-          </div>
-          <div class="stat-row"><span>Jogar Futebol</span><span class="stat-val">★★★★★</span></div>
-          <div class="stat-row"><span>Assistir jogos</span><span class="stat-val">★★★★★</span></div>
-          <div class="stat-row"><span>FIFA / VideoGame</span><span class="stat-val">★★★★★</span></div>
-          <div class="stat-row"><span>Torcer pelo Coxa</span><span class="stat-val">★★★★★</span></div>
           
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Engenharia de Software — PUCPR</h3>
+              <span>2024 — 2027</span>
+            </div>
+            <p>Estudante do 6º período de Engenharia de Software. Participação em projetos acadêmicos aplicados a problemas reais, com foco em modelagem de processos, banco de dados e qualidade de software.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-header">
+          <h2>Tecnologias</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-php-plain colored"></i>
+            <span>PHP</span>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>SQL</span>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-github-original" style="color: white;"></i>
+            <span>Git / GitHub</span>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-figma-plain colored"></i>
+            <span>Figma</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bx-sitemap' style="color: #22c55e;"></i>
+            <span>BPMN / Bizagi</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bxs-file-export' style="color: #22c55e;"></i>
+            <span>Requisitos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-contact">
+        <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+        <div class="contact-info">
+          <p>Vamos conversar?</p>
+          <a href="mailto:enzowatanabedelima@gmail.com">enzowatanabedelima@gmail.com</a>
+        </div>
+      </div>
+      
+      <div class="footer-contact">
+        <div class="contact-icon"><i class='bx bx-map'></i></div>
+        <div class="contact-info">
+          <p>Localização</p>
+          <span>Curitiba, PR - Brasil</span>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
+        <div class="contact-info">
+          <p>Conecte-se comigo</p>
+          <a href="https://linkedin.com/in/enzo-watanabe-de-lima" target="_blank">/in/enzo-watanabe-de-lima</a>
         </div>
       </div>
     </div>
-  </section>
-
-</main>
-
-<!-- ============ CONTATO / FOOTER ============ -->
-<footer id="contato">
-  <div class="wrap">
-    <div class="contact-grid">
-      <div class="contact-cta">
-        <h2>Contato</h2>
-        <p>
-          Estou em busca de oportunidades na área de tecnologia para aplicar e evoluir
-          o que venho construindo. Sinta-se à vontade para entrar em contato.
-        </p>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:enzowatanabedelima@gmail.com">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          enzowatanabedelima@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/enzo-watanabe-de-lima/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
-          linkedin.com/in/enzo-watanabe-de-lima
-        </a>
-        <a href="https://github.com/enzoojapa" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.2 0 .31.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-          github.com/enzoojapa
-        </a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Enzo Watanabe de Lima</span>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  </footer>
 
 </body>
 </html>
