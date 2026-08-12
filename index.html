@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -102,16 +102,12 @@
       <div class="projects-grid">
         <!-- Projeto 1: Cruzamento -->
         <div class="project-card" onclick="openModal('proj1')">
-          <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Database">
-          </div>
           <div class="project-trigger-content">
             <h3>Cruzamento Ambulatorial e Hospitalar</h3>
             <button class="plus-btn"><i class='bx bx-plus'></i></button>
           </div>
           <!-- Hidden Data for Modal -->
           <div id="proj1-data" class="project-hidden-data">
-            <div class="data-img">https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop</div>
             <div class="data-title">Cruzamento Ambulatorial e Hospitalar</div>
             <div class="data-desc">
               <strong>Problema:</strong> Cobranças indevidas ao estado devido a AIHs duplicadas em bases massivas.<br>
@@ -127,16 +123,12 @@
 
         <!-- Projeto 2: Dashboard -->
         <div class="project-card" onclick="openModal('proj2')">
-          <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Dashboard">
-          </div>
           <div class="project-trigger-content">
             <h3>Dashboard de Incentivos Hospitalares</h3>
             <button class="plus-btn"><i class='bx bx-plus'></i></button>
           </div>
           <!-- Hidden Data for Modal -->
           <div id="proj2-data" class="project-hidden-data">
-            <div class="data-img">https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop</div>
             <div class="data-title">Dashboard de Incentivos Hospitalares</div>
             <div class="data-desc">
               <strong>Problema:</strong> Gestores precisavam de uma visão clara dos repasses financeiros a nível municipal e regional para a tomada de decisão.<br>
@@ -152,16 +144,12 @@
 
         <!-- Projeto 3: SPRO -->
         <div class="project-card" onclick="openModal('proj3')">
-          <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1507925922837-326f12d9348e?q=80&w=600&auto=format&fit=crop" alt="BPMN Process">
-          </div>
           <div class="project-trigger-content">
             <h3>Automação SAP - SPRO IT</h3>
             <button class="plus-btn"><i class='bx bx-plus'></i></button>
           </div>
           <!-- Hidden Data for Modal -->
           <div id="proj3-data" class="project-hidden-data">
-            <div class="data-img">https://images.unsplash.com/photo-1507925922837-326f12d9348e?q=80&w=1200&auto=format&fit=crop</div>
             <div class="data-title">Automação SAP - SPRO IT Solutions</div>
             <div class="data-desc">
               <strong>Problema:</strong> O fluxo de aprovação de horas adicionais (DSR) era manual, lento e suscetível a erros.<br>
@@ -280,7 +268,6 @@
   <div class="modal-backdrop" id="projectModal" onclick="closeModal(event)">
     <div class="modal-container" id="modalContainer">
       <button class="modal-close" onclick="forceCloseModal()"><i class='bx bx-x bx-sm'></i></button>
-      <img src="" alt="Capa do Projeto" class="modal-image" id="m-img">
       <div class="modal-content">
         <h2 class="modal-title" id="m-title">Título</h2>
         <div class="modal-tech" id="m-tech"></div>
@@ -299,7 +286,6 @@
       if(!dataContainer) return;
 
       // Populate data
-      document.getElementById('m-img').src = dataContainer.querySelector('.data-img').innerText;
       document.getElementById('m-title').innerHTML = dataContainer.querySelector('.data-title').innerHTML;
       document.getElementById('m-desc').innerHTML = dataContainer.querySelector('.data-desc').innerHTML;
       document.getElementById('m-tech').innerHTML = dataContainer.querySelector('.data-tech').innerHTML;
