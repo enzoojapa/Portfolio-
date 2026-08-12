@@ -7,10 +7,10 @@
   <title>Enzo Watanabe de Lima - Engenharia de Software & Dados</title>
   <meta name="description" content="Estudante de Engenharia de Software na PUCPR e estagiário na SESA-PR, focado em levantamento de requisitos, automação de dados e processos.">
   
-  <!-- Open Graph -->
+  <!-- Open Graph / SEO -->
   <meta property="og:title" content="Enzo Watanabe de Lima - Portfólio">
-  <meta property="og:description" content="Estudante de Engenharia de Software na PUCPR e estagiário na SESA-PR, focado em requisitos e processos.">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Enzo+Watanabe+de+Lima">
+  <meta property="og:description" content="Estudante de Engenharia de Software na PUCPR focado em requisitos, dados e automação de processos na saúde pública.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&h=630&fit=crop">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -43,7 +43,7 @@
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero" id="sobre">
       <div class="hero-content">
         <div class="badge-availability">
           <span class="dot"></span> DISPONÍVEL PARA OPORTUNIDADES
@@ -58,7 +58,7 @@
       </div>
       
       <div class="hero-image">
-        <img src="profile.jpg" alt="Enzo Watanabe de Lima">
+        <img src="profile.jpg" alt="Enzo Watanabe de Lima" onerror="this.src='https://via.placeholder.com/320x380/081710/22c55e?text=Foto'">
       </div>
     </section>
 
@@ -74,21 +74,21 @@
         <div class="stat-icon"><i class='bx bx-time-five'></i></div>
         <div class="stat-info">
           <h4>+500h</h4>
-          <p>De automação e processos</p>
+          <p>De automação</p>
         </div>
       </div>
       <div class="stat-card">
         <div class="stat-icon"><i class='bx bx-table'></i></div>
         <div class="stat-info">
           <h4>+15GB</h4>
-          <p>Bases processadas (Big Data)</p>
+          <p>Bases processadas</p>
         </div>
       </div>
       <div class="stat-card">
         <div class="stat-icon"><i class='bx bx-target-lock'></i></div>
         <div class="stat-info">
           <h4>Foco</h4>
-          <p>Impacto e resultados reais</p>
+          <p>Impacto e resultados</p>
         </div>
       </div>
     </div>
@@ -100,72 +100,78 @@
       </div>
 
       <div class="projects-grid">
-        <!-- Projeto 1 -->
-        <div class="project-card">
-          <div class="project-image"><i class='bx bxs-data'></i></div>
-          <div class="project-content">
+        <!-- Projeto 1: Cruzamento -->
+        <div class="project-card" onclick="openModal('proj1')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Database">
+          </div>
+          <div class="project-trigger-content">
             <h3>Cruzamento Ambulatorial e Hospitalar</h3>
-            <div class="project-desc">
+            <button class="plus-btn"><i class='bx bx-plus'></i></button>
+          </div>
+          <!-- Hidden Data for Modal -->
+          <div id="proj1-data" class="project-hidden-data">
+            <div class="data-img">https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop</div>
+            <div class="data-title">Cruzamento Ambulatorial e Hospitalar</div>
+            <div class="data-desc">
               <strong>Problema:</strong> Cobranças indevidas ao estado devido a AIHs duplicadas em bases massivas.<br>
               <strong>Papel:</strong> Desenvolvedor Solo.<br>
-              <strong>Decisões:</strong> Python (Pandas) para lidar com DBF de 15GB e quebra de senha do legado Firebird 1.5 (3GB).<br>
-              <strong>Resultado:</strong> Bloqueio de milhares de registros, evitando evasão fiscal.<br>
+              <strong>Decisões:</strong> Utilizei Python (Pandas) para lidar com arquivos DBF de 15GB e atuei na quebra de senha (com autorização) do legado Firebird 1.5 (3GB).<br>
+              <strong>Resultado:</strong> Bloqueio de milhares de registros duplicados, evitando evasão fiscal e gerando economia real aos cofres públicos.<br>
               <strong>Artefato:</strong> Script confidencial da SESA.
             </div>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">Firebird</span>
-            </div>
-            <div class="project-links">
-              <span>Confidencial SESA</span>
-            </div>
+            <div class="data-tech"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Firebird</span></div>
+            <div class="data-links"><span>Confidencial SESA</span></div>
           </div>
         </div>
 
-        <!-- Projeto 2 -->
-        <div class="project-card">
-          <div class="project-image"><i class='bx bx-map-alt'></i></div>
-          <div class="project-content">
+        <!-- Projeto 2: Dashboard -->
+        <div class="project-card" onclick="openModal('proj2')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Dashboard">
+          </div>
+          <div class="project-trigger-content">
             <h3>Dashboard de Incentivos Hospitalares</h3>
-            <div class="project-desc">
-              <strong>Problema:</strong> Gestores precisavam de uma visão clara dos repasses financeiros a nível municipal e regional.<br>
+            <button class="plus-btn"><i class='bx bx-plus'></i></button>
+          </div>
+          <!-- Hidden Data for Modal -->
+          <div id="proj2-data" class="project-hidden-data">
+            <div class="data-img">https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop</div>
+            <div class="data-title">Dashboard de Incentivos Hospitalares</div>
+            <div class="data-desc">
+              <strong>Problema:</strong> Gestores precisavam de uma visão clara dos repasses financeiros a nível municipal e regional para a tomada de decisão.<br>
               <strong>Papel:</strong> Analista de Dados & BI.<br>
-              <strong>Decisões:</strong> Uso de painéis interativos com mapa do Paraná e drill-down em 4 níveis hierárquicos.<br>
-              <strong>Resultado:</strong> Rapidez na tomada de decisão gerencial.<br>
+              <strong>Decisões:</strong> Construção de painéis interativos utilizando mapa coroplético do Paraná, com drill-down em 4 níveis (Estado > Regional > Município > Hospital).<br>
+              <strong>Resultado:</strong> Rapidez e precisão na tomada de decisão gerencial da diretoria da SESA.<br>
               <strong>Artefato:</strong> Dashboard em produção.
             </div>
-            <div class="project-tech">
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">DAX</span>
-              <span class="tech-tag">Dashboards</span>
-            </div>
-            <div class="project-links">
-              <span>Confidencial SESA</span>
-            </div>
+            <div class="data-tech"><span class="tech-tag">Power BI</span><span class="tech-tag">DAX</span><span class="tech-tag">Dashboards</span></div>
+            <div class="data-links"><span>Confidencial SESA</span></div>
           </div>
         </div>
 
-        <!-- Projeto 3 -->
-        <div class="project-card">
-          <div class="project-image"><i class='bx bx-cog'></i></div>
-          <div class="project-content">
-            <h3>Automação SAP - SPRO IT Solutions</h3>
-            <div class="project-desc">
-              <strong>Problema:</strong> Fluxo manual e lento de aprovação de horas adicionais (DSR).<br>
+        <!-- Projeto 3: SPRO -->
+        <div class="project-card" onclick="openModal('proj3')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1507925922837-326f12d9348e?q=80&w=600&auto=format&fit=crop" alt="BPMN Process">
+          </div>
+          <div class="project-trigger-content">
+            <h3>Automação SAP - SPRO IT</h3>
+            <button class="plus-btn"><i class='bx bx-plus'></i></button>
+          </div>
+          <!-- Hidden Data for Modal -->
+          <div id="proj3-data" class="project-hidden-data">
+            <div class="data-img">https://images.unsplash.com/photo-1507925922837-326f12d9348e?q=80&w=1200&auto=format&fit=crop</div>
+            <div class="data-title">Automação SAP - SPRO IT Solutions</div>
+            <div class="data-desc">
+              <strong>Problema:</strong> O fluxo de aprovação de horas adicionais (DSR) era manual, lento e suscetível a erros.<br>
               <strong>Papel:</strong> Modelador de Processos.<br>
-              <strong>Decisões:</strong> Mapeamento AS-IS/TO-BE seguindo o MR-MPS-SW e diagramação estrita em BPMN.<br>
-              <strong>Resultado:</strong> Desenho de solução otimizada entregue à empresa.<br>
-              <strong>Artefato:</strong> <a href="#" style="text-decoration:underline;">Ver diagrama BPMN (Em breve)</a>
+              <strong>Decisões:</strong> Mapeamento AS-IS e TO-BE seguindo as normativas MR-MPS-SW, utilizando diagramação estrita em BPMN.<br>
+              <strong>Resultado:</strong> Desenho de solução estruturada e otimizada entregue à empresa para implementação técnica.<br>
+              <strong>Artefato:</strong> Ver diagrama BPMN (Em breve)
             </div>
-            <div class="project-tech">
-              <span class="tech-tag">BPMN</span>
-              <span class="tech-tag">Bizagi</span>
-              <span class="tech-tag">SAP ABAP</span>
-            </div>
-            <div class="project-links">
-              <a href="#"><i class='bx bxl-github'></i> Repositório</a>
-            </div>
+            <div class="data-tech"><span class="tech-tag">BPMN</span><span class="tech-tag">Bizagi</span><span class="tech-tag">SAP ABAP</span></div>
+            <div class="data-links"><a href="https://github.com/enzoojapa" target="_blank"><i class='bx bxl-github'></i> Ver Repositório</a></div>
           </div>
         </div>
 
@@ -230,11 +236,11 @@
             <span>Figma</span>
           </div>
           <div class="tech-card">
-            <i class='bx bx-sitemap' style="color: #22c55e;"></i>
+            <i class='bx bx-sitemap' style="color: var(--accent-green);"></i>
             <span>BPMN / Bizagi</span>
           </div>
           <div class="tech-card">
-            <i class='bx bxs-file-export' style="color: #22c55e;"></i>
+            <i class='bx bxs-file-export' style="color: var(--accent-green);"></i>
             <span>Requisitos</span>
           </div>
         </div>
@@ -270,5 +276,58 @@
     </div>
   </footer>
 
+  <!-- Modal / Dialog HTML -->
+  <div class="modal-backdrop" id="projectModal" onclick="closeModal(event)">
+    <div class="modal-container" id="modalContainer">
+      <button class="modal-close" onclick="forceCloseModal()"><i class='bx bx-x bx-sm'></i></button>
+      <img src="" alt="Capa do Projeto" class="modal-image" id="m-img">
+      <div class="modal-content">
+        <h2 class="modal-title" id="m-title">Título</h2>
+        <div class="modal-tech" id="m-tech"></div>
+        <div class="modal-desc" id="m-desc">Descrição</div>
+        <div class="modal-links" id="m-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script for Modal Logic (Vanilla JS alternative to Framer Motion) -->
+  <script>
+    const modal = document.getElementById('projectModal');
+    
+    function openModal(projectId) {
+      const dataContainer = document.getElementById(projectId + '-data');
+      if(!dataContainer) return;
+
+      // Populate data
+      document.getElementById('m-img').src = dataContainer.querySelector('.data-img').innerText;
+      document.getElementById('m-title').innerHTML = dataContainer.querySelector('.data-title').innerHTML;
+      document.getElementById('m-desc').innerHTML = dataContainer.querySelector('.data-desc').innerHTML;
+      document.getElementById('m-tech').innerHTML = dataContainer.querySelector('.data-tech').innerHTML;
+      document.getElementById('m-links').innerHTML = dataContainer.querySelector('.data-links').innerHTML;
+
+      // Show Modal
+      modal.classList.add('active');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeModal(event) {
+      // Close if clicked outside the container
+      if(event.target === modal) {
+        forceCloseModal();
+      }
+    }
+
+    function forceCloseModal() {
+      modal.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+    
+    // Close on ESC key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape") {
+        forceCloseModal();
+      }
+    });
+  </script>
 </body>
 </html>
