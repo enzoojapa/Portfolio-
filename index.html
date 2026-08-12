@@ -1,23 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enzo Watanabe de Lima - Engenharia de Software & Dados</title>
-  <meta name="description" content="Estudante de Engenharia de Software na PUCPR e estagiário na SESA-PR, focado em levantamento de requisitos, automação de dados e processos.">
+  <title>Enzo Watanabe - Engenharia de Software</title>
+  <meta name="description" content="Estudante de Engenharia de Software na PUCPR e estagiário na SESA-PR.">
   
-  <!-- Open Graph / SEO -->
-  <meta property="og:title" content="Enzo Watanabe de Lima - Portfólio">
-  <meta property="og:description" content="Estudante de Engenharia de Software na PUCPR focado em requisitos, dados e automação de processos na saúde pública.">
+  <meta property="og:title" content="Enzo Watanabe - Portfólio">
+  <meta property="og:description" content="Transformo dados e ideias em soluções reais.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&h=630&fit=crop">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="favicon.png">
-
-  <!-- Icons -->
+  
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   
@@ -25,88 +21,111 @@
 </head>
 <body>
 
-  <header>
-    <div class="container header-content">
-      <a href="#" class="logo">EW <span>Enzo Watanabe</span></a>
-      <nav>
-        <a href="#">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#experiencia">Experiência</a>
-      </nav>
+  <button class="mobile-nav-toggle" onclick="toggleSidebar()"><i class='bx bx-menu'></i></button>
+
+  <aside class="sidebar" id="sidebar">
+    <a href="#" class="logo">EW <span>.</span></a>
+    
+    <nav class="nav-links">
+      <a href="#" class="active"><i class='bx bx-home-alt-2'></i> Início</a>
+      <a href="#sobre"><i class='bx bx-user'></i> Sobre</a>
+      <a href="#projetos"><i class='bx bx-folder'></i> Projetos</a>
+      <a href="#experiencia"><i class='bx bx-briefcase'></i> Experiência</a>
+      <a href="#contato"><i class='bx bx-envelope'></i> Contato</a>
+    </nav>
+    
+    <div class="sidebar-bottom">
       <div class="social-links">
-        <a href="https://github.com/enzoojapa" target="_blank"><i class='bx bxl-github bx-sm'></i></a>
         <a href="https://linkedin.com/in/enzo-watanabe-de-lima" target="_blank"><i class='bx bxl-linkedin-square bx-sm'></i></a>
-        <a href="mailto:enzowatanabedelima@gmail.com"><i class='bx bx-envelope bx-sm'></i></a>
+        <a href="https://github.com/enzoojapa" target="_blank"><i class='bx bxl-github bx-sm'></i></a>
+        <a href="mailto:enzowatanabedelima@gmail.com"><i class='bx bx-mail-send bx-sm'></i></a>
+      </div>
+      <a href="Curriculo- Enzo Watanabe de Lima.pdf" download class="btn-sidebar">
+        <i class='bx bx-download'></i> Baixar CV
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    
+    <div class="top-bar">
+      <div class="badge-availability">
+        <span class="dot"></span> DISPONÍVEL PARA OPORTUNIDADES
       </div>
     </div>
-  </header>
 
-  <main class="container">
     <section class="hero" id="sobre">
-      <div class="hero-content">
-        <div class="badge-availability">
-          <span class="dot"></span> DISPONÍVEL PARA OPORTUNIDADES
+      <div class="hero-left">
+        <div class="hero-profile">
+          <img src="profile.jpg" alt="Enzo Watanabe" onerror="this.src='https://via.placeholder.com/200/081710/22c55e?text=EW'">
         </div>
-        <h1>Estudante de Engenharia de Software focado em <span>requisitos e processos.</span></h1>
-        <p>Trabalho na ponte entre a necessidade de quem usa e a solução que o time constrói. Atualmente estagiário na SESA/PR, atuando com automação de processos, análise de dados e sistemas de saúde pública.</p>
-        
-        <div class="hero-buttons">
-          <a href="#projetos" class="btn btn-primary">Ver projetos <i class='bx bx-right-arrow-alt'></i></a>
-          <a href="Curriculo- Enzo Watanabe de Lima.pdf" download class="btn btn-outline">Baixar CV <i class='bx bx-download'></i></a>
+        <div class="hero-text">
+          <h2>Olá, eu sou</h2>
+          <h1>Enzo Watanabe</h1>
+          <h3>Desenvolvedor de Software</h3>
+          <p>Transformo dados e ideias em soluções reais. Atualmente estagiário na SESA/PR, atuando com automação de processos e desenvolvimento de dashboards que geram impacto no setor público.</p>
+          
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn btn-primary">Ver projetos <i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#contato" class="btn btn-outline">Entrar em contato <i class='bx bx-send'></i></a>
+          </div>
+
+          <div class="tech-pills">
+            <div class="pill"><i class="devicon-python-plain colored"></i> Python</div>
+            <div class="pill"><i class="devicon-java-plain colored"></i> Java</div>
+            <div class="pill"><i class="devicon-mysql-plain colored"></i> SQL</div>
+            <div class="pill"><i class='bx bxs-bar-chart-alt-2' style="color: #eab308;"></i> Power BI</div>
+            <div class="pill"><i class='bx bxs-file-blank' style="color: #22c55e;"></i> Excel</div>
+          </div>
         </div>
       </div>
-      
-      <div class="hero-image">
-        <img src="profile.jpg" alt="Enzo Watanabe de Lima" onerror="this.src='https://via.placeholder.com/320x380/081710/22c55e?text=Foto'">
+
+      <div class="hero-right">
+        <div class="ide-window">
+          <div class="ide-header">
+            <div class="ide-dot r"></div><div class="ide-dot y"></div><div class="ide-dot g"></div>
+          </div>
+          <div class="ide-content">
+            <div class="ide-lines">
+              01<br>02<br>03<br>04<br>05<br>06<br>07<br>08<br>09<br>10<br>11
+            </div>
+            <div class="ide-code">
+              <span class="keyword">def</span> <span class="func">resolver_problemas</span>(dados):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;estrategia = <span class="string">'Automatizar, analisar e gerar valor'</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">while</span> <span class="var">True</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;insights = analisar(dados)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;solucao = desenvolver(insights)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;impacto = aplicar(solucao)<br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> impacto > <span class="var">0</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> solucao<br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Código que gera impacto real</span><br>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <div class="stats">
-      <div class="stat-card">
-        <div class="stat-icon"><i class='bx bx-code-alt'></i></div>
-        <div class="stat-info">
-          <h4>+8</h4>
-          <p>Projetos concluídos</p>
-        </div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class='bx bx-time-five'></i></div>
-        <div class="stat-info">
-          <h4>+500h</h4>
-          <p>De automação</p>
-        </div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class='bx bx-table'></i></div>
-        <div class="stat-info">
-          <h4>+15GB</h4>
-          <p>Bases processadas</p>
-        </div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class='bx bx-target-lock'></i></div>
-        <div class="stat-info">
-          <h4>Foco</h4>
-          <p>Impacto e resultados</p>
-        </div>
-      </div>
-    </div>
 
     <section id="projetos">
       <div class="section-header">
         <h2>Projetos em destaque</h2>
-        <a href="https://github.com/enzoojapa" target="_blank">Ver repositórios <i class='bx bx-right-arrow-alt'></i></a>
+        <a href="https://github.com/enzoojapa" target="_blank">Ver todos os projetos <i class='bx bx-right-arrow-alt'></i></a>
       </div>
 
       <div class="projects-grid">
         <!-- Projeto 1: Cruzamento -->
         <div class="project-card" onclick="openModal('proj1')">
           <div class="project-trigger-content">
-            <h3>Cruzamento Ambulatorial e Hospitalar</h3>
-            <button class="plus-btn"><i class='bx bx-plus'></i></button>
+            <div class="project-header">
+              <h3>Cruzamento Ambulatorial e Hospitalar</h3>
+              <button class="plus-btn"><i class='bx bx-plus'></i></button>
+            </div>
+            <div class="project-brief">
+              Automação completa para bloqueio de cobranças indevidas ao estado através do cruzamento de bases gigantes.
+            </div>
           </div>
-          <!-- Hidden Data for Modal -->
+          
           <div id="proj1-data" class="project-hidden-data">
             <div class="data-title">Cruzamento Ambulatorial e Hospitalar</div>
             <div class="data-desc">
@@ -124,10 +143,15 @@
         <!-- Projeto 2: Dashboard -->
         <div class="project-card" onclick="openModal('proj2')">
           <div class="project-trigger-content">
-            <h3>Dashboard de Incentivos Hospitalares</h3>
-            <button class="plus-btn"><i class='bx bx-plus'></i></button>
+            <div class="project-header">
+              <h3>Dashboard de Incentivos Hospitalares</h3>
+              <button class="plus-btn"><i class='bx bx-plus'></i></button>
+            </div>
+            <div class="project-brief">
+              Dashboard interativo de regionais e municípios com indicadores de repasse hospitalar.
+            </div>
           </div>
-          <!-- Hidden Data for Modal -->
+
           <div id="proj2-data" class="project-hidden-data">
             <div class="data-title">Dashboard de Incentivos Hospitalares</div>
             <div class="data-desc">
@@ -137,7 +161,7 @@
               <strong>Resultado:</strong> Rapidez e precisão na tomada de decisão gerencial da diretoria da SESA.<br>
               <strong>Artefato:</strong> Dashboard em produção.
             </div>
-            <div class="data-tech"><span class="tech-tag">Power BI</span><span class="tech-tag">DAX</span><span class="tech-tag">Dashboards</span></div>
+            <div class="data-tech"><span class="tech-tag">Power BI</span><span class="tech-tag">DAX</span><span class="tech-tag">SQL</span></div>
             <div class="data-links"><span>Confidencial SESA</span></div>
           </div>
         </div>
@@ -145,10 +169,15 @@
         <!-- Projeto 3: SPRO -->
         <div class="project-card" onclick="openModal('proj3')">
           <div class="project-trigger-content">
-            <h3>Automação SAP - SPRO IT</h3>
-            <button class="plus-btn"><i class='bx bx-plus'></i></button>
+            <div class="project-header">
+              <h3>Automação SAP - SPRO IT</h3>
+              <button class="plus-btn"><i class='bx bx-plus'></i></button>
+            </div>
+            <div class="project-brief">
+              Modelagem de processos e desenho de solução otimizada para fluxo de aprovação de horas (DSR).
+            </div>
           </div>
-          <!-- Hidden Data for Modal -->
+
           <div id="proj3-data" class="project-hidden-data">
             <div class="data-title">Automação SAP - SPRO IT Solutions</div>
             <div class="data-desc">
@@ -166,103 +195,66 @@
       </div>
     </section>
 
-    <section id="experiencia" class="dual-layout">
+    <div class="bottom-grid">
+      <!-- Stats -->
       <div>
-        <div class="section-header">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-code-alt'></i></div>
+            <div class="stat-info">
+              <h4>+8</h4>
+              <p>Projetos concluídos</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-time-five'></i></div>
+            <div class="stat-info">
+              <h4>+500h</h4>
+              <p>De automação</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-table'></i></div>
+            <div class="stat-info">
+              <h4>+15GB</h4>
+              <p>Bases processadas</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-bolt-circle'></i></div>
+            <div class="stat-info">
+              <h4>Foco</h4>
+              <p>Impacto real</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div id="experiencia">
+        <div class="section-header" style="margin-bottom: 24px;">
           <h2>Experiência</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-header">
               <h3>Estagiário de TI — SESA/PR</h3>
-              <span>2024 — Atual</span>
+              <span>2024 - Atual</span>
             </div>
-            <p>Atuo no levantamento, tratamento e automação de dados dos sistemas de informação em saúde do Estado. Substituo rotinas manuais por processos automatizados e transformo dados brutos em painéis de apoio à decisão (Dashboards, scripts Python para bases gigantes, e extração automatizada de Diário Oficial).</p>
+            <p>Automação de processos, tratamento de dados, criação de dashboards e integração de planilhas para apoio à gestão em saúde pública.</p>
           </div>
           
           <div class="timeline-item">
             <div class="timeline-header">
-              <h3>Engenharia de Software — PUCPR</h3>
-              <span>2024 — 2027</span>
+              <h3>Projetos Acadêmicos e Pessoais</h3>
+              <span>2022 - Atual</span>
             </div>
-            <p>Estudante do 6º período de Engenharia de Software. Participação em projetos acadêmicos aplicados a problemas reais, com foco em modelagem de processos, banco de dados e qualidade de software.</p>
+            <p>Desenvolvimento de sistemas (PUCPR), estudos em algoritmos, banco de dados e criação de soluções para problemas reais de negócio.</p>
           </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="section-header">
-          <h2>Tecnologias</h2>
-        </div>
-        <div class="tech-grid">
-          <div class="tech-card">
-            <i class="devicon-python-plain colored"></i>
-            <span>Python</span>
-          </div>
-          <div class="tech-card">
-            <i class="devicon-php-plain colored"></i>
-            <span>PHP</span>
-          </div>
-          <div class="tech-card">
-            <i class="devicon-mysql-plain colored"></i>
-            <span>SQL</span>
-          </div>
-          <div class="tech-card">
-            <i class="devicon-java-plain colored"></i>
-            <span>Java</span>
-          </div>
-          <div class="tech-card">
-            <i class="devicon-javascript-plain colored"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="tech-card">
-            <i class="devicon-github-original" style="color: white;"></i>
-            <span>Git / GitHub</span>
-          </div>
-          <div class="tech-card">
-            <i class="devicon-figma-plain colored"></i>
-            <span>Figma</span>
-          </div>
-          <div class="tech-card">
-            <i class='bx bx-sitemap' style="color: var(--accent-green);"></i>
-            <span>BPMN / Bizagi</span>
-          </div>
-          <div class="tech-card">
-            <i class='bx bxs-file-export' style="color: var(--accent-green);"></i>
-            <span>Requisitos</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-contact">
-        <div class="contact-icon"><i class='bx bx-envelope'></i></div>
-        <div class="contact-info">
-          <p>Vamos conversar?</p>
-          <a href="mailto:enzowatanabedelima@gmail.com">enzowatanabedelima@gmail.com</a>
-        </div>
-      </div>
-      
-      <div class="footer-contact">
-        <div class="contact-icon"><i class='bx bx-map'></i></div>
-        <div class="contact-info">
-          <p>Localização</p>
-          <span>Curitiba, PR - Brasil</span>
-        </div>
-      </div>
-
-      <div class="footer-contact">
-        <div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
-        <div class="contact-info">
-          <p>Conecte-se comigo</p>
-          <a href="https://linkedin.com/in/enzo-watanabe-de-lima" target="_blank">/in/enzo-watanabe-de-lima</a>
         </div>
       </div>
     </div>
-  </footer>
+  </main>
 
   <!-- Modal / Dialog HTML -->
   <div class="modal-backdrop" id="projectModal" onclick="closeModal(event)">
@@ -277,7 +269,6 @@
     </div>
   </div>
 
-  <!-- Script for Modal Logic (Vanilla JS alternative to Framer Motion) -->
   <script>
     const modal = document.getElementById('projectModal');
     
@@ -285,22 +276,17 @@
       const dataContainer = document.getElementById(projectId + '-data');
       if(!dataContainer) return;
 
-      // Populate data
       document.getElementById('m-title').innerHTML = dataContainer.querySelector('.data-title').innerHTML;
       document.getElementById('m-desc').innerHTML = dataContainer.querySelector('.data-desc').innerHTML;
       document.getElementById('m-tech').innerHTML = dataContainer.querySelector('.data-tech').innerHTML;
       document.getElementById('m-links').innerHTML = dataContainer.querySelector('.data-links').innerHTML;
 
-      // Show Modal
       modal.classList.add('active');
       document.body.classList.add('modal-open');
     }
 
     function closeModal(event) {
-      // Close if clicked outside the container
-      if(event.target === modal) {
-        forceCloseModal();
-      }
+      if(event.target === modal) forceCloseModal();
     }
 
     function forceCloseModal() {
@@ -308,12 +294,13 @@
       document.body.classList.remove('modal-open');
     }
     
-    // Close on ESC key
     document.addEventListener('keydown', function(event) {
-      if (event.key === "Escape") {
-        forceCloseModal();
-      }
+      if (event.key === "Escape") forceCloseModal();
     });
+
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+    }
   </script>
 </body>
 </html>
